@@ -1,0 +1,440 @@
+​​<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width" />
+   <style>
+     body {
+       font-family: 'Arial', sans-serif;
+       background-color: white;
+       margin: 0;
+     }
+
+
+     nav {
+       background-color: white;
+       color: #000; /* Modifier la couleur du texte de la barre de navigation en noir */
+     }
+
+
+     nav a {
+       color: #000; /* Modifier la couleur des liens de la barre de navigation en noir */
+       text-decoration: none;
+       margin-right: 10px; /* Ajouter une marge à droite aux liens de la barre de navigation */
+     }
+
+
+     main {
+       padding: 20px;
+     }
+
+
+     h1 {
+      color: black;
+       font-size: 40px;
+       margin-left: 25px;
+       color: black;
+     }
+
+
+     h3 {
+      color: black;
+       display: inline-block;
+       margin: 20px;
+       margin-left: 30px;
+     }
+
+
+     .rectangle-parent {
+       position: absolute;
+       top: 65px;
+       left: 327px;
+       width: 447px;
+       height: 31px;
+       font-size: var(--font-size-mini);
+     }
+
+
+     .rectangle {
+       position: absolute;
+       top: 58px;
+       left: 315px;
+       width: 447px;
+       height: 31px;
+       z-index: -1;
+       background-color: #EADECB;
+     }
+
+
+     .glass {
+       position: absolute;
+       top: -348px;
+       left: -1060px;
+       width: 17px;
+       height: 17px;
+     }
+
+
+     .search-articles {
+       position: absolute;
+       left: 20px;
+     }
+
+
+     .heart-icon {
+       width: 32px;
+       height: 32px;
+       position: absolute;
+       top: -358px;
+       left: 360px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+     .bag-icon {
+       width: 35px;
+       height: 30px;
+       position: absolute;
+       top: -358px;
+       left: 440px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+     .person-icon {
+       width: 44px;
+       height: 44px;
+       position: relative;
+       top: -364px;
+       left: 270px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+     .flag {
+       width: 35px;
+       height: 22px;
+       position: absolute;
+       top: -350px;
+       left: 180px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+     .eng {
+       position: absolute;
+       top: 66px;
+       left: 1525px;
+     }
+
+
+     .background-rectangle {
+       position: relative;
+       width: 1860px;
+       height: 800px;
+       background-color: #EADECB;
+       top: 130px;
+       left: -285px
+     }
+
+
+     .rectangle2 {
+       background: #FFFFFF;
+       position: relative;
+       width: 1270px;
+       height: 650px;
+       top: 25px;
+       left: 25px;
+     }
+
+
+     .rectangle3 {
+       background: #FFFFFF;
+       position: relative;
+       width: 505px;
+       height: 650px;
+       top: 0px;
+       left: 1305px;
+     }
+
+
+     h4 {
+       position: absolute;
+       top: 200px;
+       left: 80px;
+       font-size: 23px
+     }
+
+
+     .image1 {
+       position: absolute;
+       width: 87px;
+       top: -120px;
+       left: -1299px
+     }
+
+
+     .ligne-personnalisee {
+       position: absolute;
+       border: 2px #;
+       margin: 15px 0;
+       margin-left: -1300px;
+       width: 265%;
+       top: -150px;
+     
+     }
+
+
+     .ligne-personnalisee2 {
+       position: absolute;
+       border: 2px #;
+       left: -1300px;
+       width: 265%;
+       top: 10px;
+       margin: 15px 0;
+     
+     }
+
+
+     h5 {
+       position: absolute;
+       top: 275px;
+       left: 185px;
+       font-size:15px;
+     }
+
+
+     h6 {
+       position: absolute;
+       top: 310px;
+       left: 186px;
+       font-weight: 100;
+     }
+      
+     h7 {
+       position: absolute;
+       top: 350px;
+       left: 186px;
+       font-weight: 100;
+       font-size: 11px
+     }
+
+
+     h8 {
+       position: absolute;
+       top: 405px;
+       left: 186px;
+       font-weight: 100;
+       font-size: 11px;
+
+
+     }
+
+
+     h9 {
+       position: absolute;
+       left: 240px;
+       top: 404px;
+       z-index: 2;
+
+
+     }
+
+
+     .image2 {
+       position: absolute;
+       width: 18px;
+       left: -1170px;
+       top: -10px
+     }
+
+
+     .image3 {
+       position: absolute;
+       width: 18px;
+       left: -1125px;
+       top: -10px
+     }
+
+
+     .image4 {
+       position: absolute;
+       width: 43px;
+       left: -190px;
+       top: -12px;
+     }
+
+
+     .heart-icon2 {
+       position: absolute;
+       width: 20px;
+       left: -128px;
+       top: -7px;
+     }
+
+
+     h10 {
+       position: absolute;
+       left: 1200px;
+       top: 298px;
+       font-weight: 700;
+     }
+
+
+     h11 {
+       position: absolute;
+       left: 1380px;
+       top: 230px;
+       font-size: 23px;
+       font-weight: 700;
+     }
+
+
+     h12 {
+       position: absolute;
+       left: 1440px;
+       top: 230px;
+       font-size: 23px;
+       font-weight: 700;
+     }
+
+
+     .fee {
+       position: absolute;
+       left: 23px;
+       top: 57px;
+       font-size: 15px;
+      
+     }
+
+
+     .grand {
+       position: absolute;
+       left: 23px;
+       top: 80px;
+       font-size: 15px;
+       font-weight: 700;
+     }
+
+
+     .eurfee {
+       position: absolute;
+       left: 410px;
+       top: 57px;
+       font-size: 15px;
+      
+     }
+
+
+     .eurtotal {
+       position: absolute;
+       left: 320px;
+       top: 80px;
+       font-size: 15px;
+       font-weight: 700;
+      
+     }
+
+
+     .rectanglecheckout {
+       position: absolute;
+       background-color: #EADECB;
+       width: 455px;
+       left: 25px;
+       top: 200px;
+     }
+
+
+     h13 {
+       position: absolute;
+       width: 300px;
+       left: 1570px;
+       top: 427px;
+       font-size:18px;
+       font-weight: 700;
+
+
+     }
+
+     h14 {
+      position: absolute;
+       left: 1770px;
+       top: 295px;
+       font-size: 15px;
+       font-weight:700;
+      }
+
+      h15 {
+      position: absolute;
+       left: 1808px;
+       top: 295px;
+       font-size: 15px;
+       font-weight:700;
+       
+      }
+  
+
+
+
+   </style>
+   <script type="module" src="script.js"></script>
+ </head>
+ <body>
+   <main>
+     <a href="index.html"><h1>GAMAR</h1></a>
+     <h3>New Collection</h3>
+     <h3>Boys</h3>
+     <h3>Girls</h3>
+     <h3>See all</h3>
+     <h3>Sale</h3>
+     <h4>You cart</h4>
+     <h5>Slippers Booties</h5>
+     <h6>Size: 27</h6>
+     <h7>Color:Brown</h7>
+     <h8>Qty:</h8>
+     <h9> 1 </h9>
+     <h10> EUR 20.95 </h10>
+     <h11>Total</h11>
+     <h12>amount</h12>
+     <h13>Checkout</h13>
+     <h14>EUR </h14>
+     <h15>23.95</h15>
+
+
+   <div class="rectangle-parent">
+   <div class="search-articles">Search articles</div>
+     </div>
+     <div class="eng"> ENG</div>
+   <div class="rectangle">
+     <div class= "background-rectangle">
+       <div class="rectangle2">
+       <div class="rectangle3">
+       <div class="fee">Shipping fee</div>
+       <div class="grand">Grand total</div>
+       <div class="rectangle-cart"></div>
+       <div class="eurfee">EUR 3.00</div>
+       <div class="rectanglecheckout">
+
+
+
+
+   <img class="glass" src="https://static-00.iconduck.com/assets.00/magnifying-glass-icon-2048x2048-3qmsqqer.png">
+   <img class="heart-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1C6BNlDVUlhBdcCnVEvh2BwitGGF8xlw3qPIdACVUAQ&s">
+   <img class="bag-icon" src="https://cdn-icons-png.flaticon.com/512/126/126142.png">
+   <img class= "person-icon" src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png">
+   <img class="flag" src="https://media.istockphoto.com/id/486407806/fr/vectoriel/union-jack.jpg?s=612x612&w=0&k=20&c=FS-LDv0IOVttsyy3kkbJkgJCDum6b9yzc--l96YqYdA=">
+   <img class="image1" src="https://www.overland.com/assets2/50702-mult-av8880?$style-magnified-a$"alt="Description de l'image">
+   <img class="image2" src="https://cdn-icons-png.flaticon.com/512/149/149145.png">
+   <img class="image3" src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png">
+   <hr class="ligne-personnalisee">
+   <hr class="ligne-personnalisee2">
+   <img class="image4" src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Trash-Icon-by-Kanggraphic-580x386.jpg">
+   <img class="heart-icon2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1C6BNlDVUlhBdcCnVEvh2BwitGGF8xlw3qPIdACVUAQ&s">
+
+
+ </body>
+ </html>

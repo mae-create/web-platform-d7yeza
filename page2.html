@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width" />
+
+   <style>
+     body {
+       font-family: 'Arial', sans-serif;
+       background-color: white;
+       margin: 0;
+     }
+
+
+     nav {
+       background-color: white;
+       color: #000; /* Modifier la couleur du texte de la barre de navigation en noir */
+     }
+
+
+     nav a {
+       color: #000; /* Modifier la couleur des liens de la barre de navigation en noir */
+       text-decoration: none;
+       margin-right: 10px; /* Ajouter une marge à droite aux liens de la barre de navigation */
+     }
+
+
+     main {
+       padding: 20px;
+     }
+
+
+     h1 {
+      color: black;
+       font-size: 50px;
+       margin-left: 25px;
+       color: black;
+     }
+
+
+     h3 {
+      color: black;
+       display: inline-block;
+       margin: 20px;
+       margin-left: 30px;
+     }
+     
+
+
+     .image-container {
+       display: flex;
+     }
+
+
+     img {
+       position: absolute;
+       width: 700px;
+       height: 636px;
+       margin-left:30px;
+     }
+
+
+     .image2 {
+     position: absolute;
+     top: 220px; 
+     left: 635px;
+     width: 560px;
+       height: 735px;
+     object-fit: cover;
+     z-index: -1;
+     }
+
+
+     .image1 {
+       position: absolute;
+       top: 220px;
+       left: 70px;
+       width: 560px;
+       height: 735px;
+       object-fit: cover;
+       z-index: -1;
+     }
+
+
+     .image3 {
+       position: absolute;
+       top: 220px;
+       left: 1200px;
+       width: 560px;
+       height: 735px;
+       object-fit: cover;
+       z-index: -1;
+     }
+
+
+     .text-container {
+       background-color: white;
+       padding: 20px;
+       width: 200px;
+       margin-left: 20px;
+       color: black;
+       font-size: 20px;
+       font-weight: bold;
+       text-align: justify;
+       vertical-align: top;
+     }
+
+
+     .rectangle-parent {
+      position: absolute;
+       top: 67px;
+       left: 430px;
+       width: 447px;
+       height: 31px;
+     }
+
+
+      .rectangle {
+       position: absolute;
+       top: 60px;
+       left: 415px;
+       width: 550px;
+       height: 31px;
+       z-index: -1;
+       background-color: #EADECB;
+     }
+
+     .rectangle-vertical {
+     position: absolute;
+     width: 480px;
+     height: 720px;
+     top: 190px;
+     left: 855px;
+     background-color: #FFFFFF;
+     z-index: -1;
+   }
+
+
+   h2 {
+     margin-top:60px;
+     margin-left: 1280px;
+     font-size: 25px;
+   }
+
+   h9 {
+     position: absolute;
+     margin-top:-140px;
+    left: 1410px;
+     font-size: 25px;
+     font-weight:700;
+   }
+
+
+   h4 {
+     margin-top:5px;
+     margin-left: 1283px;
+     font-size: 18px;
+     font-weight: 110;
+   }
+
+
+   h5 {
+     margin-top:-7px;
+     margin-left: 1283px;
+     font-size: 18px;
+     font-weight: 110;
+   }
+
+
+   .circle {
+     width: 18px; 
+height: 18px;
+     background-color: #A07E57;
+     border-radius: 50%;
+     z-index: 3;
+     margin-top: 335px;
+     margin-left: 890px
+   }
+
+
+   .circle-rose {
+     position:absolute;
+     width: 18px;
+     height: 18px;
+     background-color: #E19A9A;
+     border-radius: 50%;
+     z-index: 3;
+     margin-top: 20px;
+     left: 285px
+   }
+
+
+   .circle-rose {
+    position:absolute;
+     width: 18px;
+     height: 18px;
+     background-color: #E19A9A;
+     border-radius: 50%;
+     z-index: 3;
+     margin-top: -18px;
+     margin-left: 630px
+   }
+
+
+   .circle-bleu {
+    position:absolute;
+     width: 18px;
+     height: 18px;
+     background-color: #7DADBB;
+     border-radius: 50%;
+     z-index: 3;
+     margin-top: -18px;
+     left: 940px
+   }
+
+
+   .circle-gris {
+    position:absolute;
+     width: 18px;
+     height: 18px;
+     background-color: #9BA0A2;
+     border-radius: 50%;
+     z-index: 3;
+     margin-top: -18px;
+    margin-left: 965px
+   }
+
+
+   .rectangle-size {
+     position: absolute;
+       top: 500px;
+       left: 890px;
+       width: 410px;
+       height: 40px;
+       z-index: 1;
+       background-color: #EADECB;
+     }
+
+
+     h6 {
+     position: absolute;
+     margin-top:166px;
+     margin-left: 1300px;
+     font-size: 16px;
+     font-weight: 110;
+     }
+
+
+     h7 {
+     position: absolute;
+     margin-top:215px;
+     margin-left: 1420px;
+     font-size: 16px;
+     font-weight: 700;
+     color: black;
+     }
+
+
+     h8 {
+     position: absolute;
+     margin-top:270px;
+     margin-left: 1285px;
+     font-size: 13px;
+     font-weight: 500;
+   }
+
+   h10 {
+     position: absolute;
+     margin-top:285px;
+     margin-left: 1285px;
+     font-size: 13px;
+     font-weight: 500;
+   }
+
+   h11 {
+     position: absolute;
+     margin-top:300px;
+     margin-left: 1285px;
+     font-size: 13px;
+     font-weight: 500;
+   }
+
+   h12 {
+     position: absolute;
+     margin-top:315px;
+     margin-left: 1285px;
+     font-size: 13px;
+     font-weight: 500;
+   }
+
+   h13 {
+     position: absolute;
+     margin-top:330px;
+     margin-left: 1285px;
+     font-size: 13px;
+     font-weight: 500;
+   }
+
+
+
+
+
+   .rectangle-cart {
+     position: absolute;
+       top: 550px;
+       left: 890px;
+       width: 345px;
+       height: 40px;
+       z-index: 1;
+       background-color: #EADECB;
+}
+  
+     .cart {
+       position: absolute;
+       margin-top: -150px;
+       margin-left: 700px;
+       font-size: 16px;
+       font-weight: 700
+     }
+
+
+     .rectangle-heart {
+       position: absolute;
+       top: 550px;
+       left: 1241px;
+       width: 59px;
+       height: 40px;
+       z-index: 0;
+       background-color: #EADECB;
+     }
+
+
+     .description {
+       margin-top:160px;
+       margin-left: 610px;
+       font-size: 14px;
+       font-weight: 110;
+     }
+
+
+     .heart-icon {
+       width: 32px;
+       height: 32px;
+       position: absolute;
+       top: -2px;
+       left: 1200px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+
+
+     .bag-icon {
+       width: 35px;
+       height: 30px;
+       position: absolute;
+       top: -2px;
+       left: 1370px;
+       background-color: #FFFFFF;
+       z-index: -1;
+ }
+
+
+
+
+     .person-icon {
+       width: 44px;
+       height: 44px;
+       position: absolute;
+       top: -8px;
+       left: 1280px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+
+
+     .flag {
+       width: 35px;
+       height: 22px;
+       position: absolute;
+       top: 4px;
+       left: 1110px;
+       background-color: #FFFFFF;
+       z-index: -1;
+     }
+
+
+
+
+     .eng {
+       position: absolute;
+       left: 1110px;
+       margin-top: -345px;
+       font-size: 13px;
+     }
+
+
+     .glass {
+       position: absolute;
+       top: 6px;
+       left: -23px;
+       width: 17px;
+       height: 17px;
+     }
+
+
+     .search-articles {
+       position: absolute;
+       left: 20px;
+     }
+
+
+     .heart-icon2 {
+       position: absolute;
+       width: 30px;
+      height: 30px;
+       top: 555px;
+       left: 1227px;
+       z-index: 2;
+     }
+
+
+     .arrow1 {
+       position: absolute;
+       width: 40px;
+       height: 40px;
+       z-index: 2;
+       margin-top: 145px;
+       left: 720px;
+       transform: rotate(180deg);
+     }
+
+
+     .arrow2 {
+       position: absolute;
+       width: 40px;
+       height: 40px;
+       z-index: 2;
+       margin-top: 145px;
+       margin-left: -285px;
+      }
+
+
+.arrow3 {
+       position:absolute;
+       width:15px;
+       height: 15px;
+       transform: rotate(-90deg);
+       left: 213%;
+       top: 1820%;
+       z-index: 2;
+     }
+
+
+     .arrow4 {
+       position:absolute;
+       width:15px;
+       height: 15px;
+       transform: rotate(-90deg);
+       left: 225%;
+       top: 1650%;
+       z-index:2;
+     }
+
+
+   </style>
+   <script type="module" src="script.js"></script>
+ </head>
+ <body>
+   <main>
+   <h1>GAMAR</h1></a> 
+     <h3>New Collection</h3>
+     <h3>Boys</h3>
+     <h3>Girls</h3>
+     <h3>See all</h3>
+     <h3>Sale</h3>
+     <h2>Slippers</h2>
+     <h4>EUR 20.95</h4>
+     <h5>Color: brown </h5>
+     <h6>Select a size</h6>
+     <a href="page3.html"><h7>Add to cart</h7></a>
+     <h9> Booties</h9>
+     <h8>Slippers lined with fleece to keep your child's feet warm. 
+     Made from </h8>
+     <h10>soft, durable materials, our children's booties offer a warm, secure feel</h10>
+     <h11>perfectly suited to their active little feet. Give your little explorers the</h11>
+     <h12>pleasure of walking with our slippers designed to brighten  their days</h12>
+     <h13>at home</h13>
+
+
+   </main>
+   <div class="image-container">
+   <img class="image1" src="https://www.overland.com/assets2/50702-mult-av8880?$style-magnified-a$" alt="Description de l'image">
+   <img class= "image2" src= "https://www.overland.com/assets2/50702-mult-av8882?$style%2Dlg%2D2x$&id=GlIsL0&fmt=jpg&fit=constrain,1">
+   <img class= "image3" src= "https://www.overland.com/assets2/50702-mult-av8880?$style-magnified-a$">
+   </div>
+   <div class="rectangle-parent">
+     <div class="search-articles">Search articles</div>
+     </div>
+   <div class="rectangle">
+   <div class="rectangle-vertical">
+   </div>
+   <div class="circle"></div>
+   <div class="circle-rose"></div>
+   <div class="circle-bleu"></div>
+   <div class="circle-gris"></div>
+   <div class="rectangle-size"></div>
+   <div class="rectangle-cart"></div>
+   <div class="rectangle-heart"></div>
+   <div class="eng"> ENG</div>
+
+
+   <img class="heart-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1C6BNlDVUlhBdcCnVEvh2BwitGGF8xlw3qPIdACVUAQ&s">
+   
+    <img class="bag-icon" src="https://cdn-icons-png.flaticon.com/512/126/126142.png">
+    
+   <img class= "person-icon" src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png">
+   <img class="flag" src="https://media.istockphoto.com/id/486407806/fr/vectoriel/union-jack.jpg?s=612x612&w=0&k=20&c=FS-LDv0IOVttsyy3kkbJkgJCDum6b9yzc--l96YqYdA=">
+   <img class="glass" src="https://static-00.iconduck.com/assets.00/magnifying-glass-icon-2048x2048-3qmsqqer.png">
+   <img class="heart-icon2" src="https://cdn.icon-icons.com/icons2/494/PNG/512/heart_icon-icons.com_48290.png">
+   <img class="arrow1" src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
+   <img class="arrow2" src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
+<img class="arrow3" src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
+<img class="arrow4" src="https://cdn-icons-png.flaticon.com/512/271/271220.png">
+
+
+
+
+ </body>
+</html>
